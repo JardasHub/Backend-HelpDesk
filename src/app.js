@@ -10,7 +10,8 @@ import chamadosRoutes from "./routes/r_chamados.js";
 import usuariosRoutes from "./routes/r_usuarios.js";
 
 const app = express();
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "http://localhost:3000",
+    "https://seu-frontend.vercel.app" }));
 app.use(express.json());
 
 app.use("/auth", authRoutes);
