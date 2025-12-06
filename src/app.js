@@ -10,8 +10,7 @@ import chamadosRoutes from "./routes/r_chamados.js";
 import usuariosRoutes from "./routes/r_usuarios.js";
 
 const app = express();
-app.use(cors({ origin: "http://localhost:3000",
-    "https://frontend-help-desk-lilac.vercel.app" }));
+app.use(cors());
 app.use(express.json());
 
 app.use("/auth", authRoutes);
