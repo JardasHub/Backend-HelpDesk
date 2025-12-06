@@ -11,7 +11,7 @@ import usuariosRoutes from "./routes/r_usuarios.js";
 
 const app = express();
 app.use(cors({ origin: "http://localhost:3000",
-    "https://seu-frontend.vercel.app" }));
+    "https://frontend-help-desk-lilac.vercel.app" }));
 app.use(express.json());
 
 app.use("/auth", authRoutes);
